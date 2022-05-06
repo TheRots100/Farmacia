@@ -1,18 +1,74 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.carousel-inner>.carousel-item>img {
-    margin: 0 auto;
-}
-
-
-/*header*/
-
-
-/*
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ .carousel-inner>.carousel-item>img {
+     margin: 0 auto;
+ }
+ 
+ .btn-circle.btn-sm {
+     border: none;
+     width: 30px;
+     height: 30px;
+     padding: 0 0;
+     border-radius: 15px;
+ }
+ 
+ .bi-person-circle {
+     width: 30px;
+     height: 30px;
+     padding: 0px 0px;
+ }
+ 
+ .nav-tabs .nav-item.show .nav-link,
+ .nav-tabs .nav-link.active {
+     width: 100%;
+     border: none;
+     border-top-left-radius: 0rem;
+     border-top-right-radius: 0rem;
+ }
+ 
+ .nav-tabs .nav-link {
+     margin-bottom: -2px;
+     border-top-left-radius: 0rem;
+     background: 0 0;
+     border: none;
+     width: 100%;
+ }
+ 
+ .nav-tabs .nav-item {
+     border: none;
+     background-color: #e5e5e5;
+     margin-bottom: -1px;
+     width: 50%;
+ }
+ 
+ login-modal .nav-tabs .nav-item {
+     width: 50%;
+     margin-bottom: 2rem;
+ }
+ 
+ login-modal .nav-tabs {
+     border-bottom: none;
+ }
+ 
+ form.tab-content_login {
+     padding: 1rem;
+ }
+ 
+ .contra_link {
+     text-align: center;
+     color: #8c8c8c;
+     margin-top: 0.5rem;
+ }
+ 
+ .modal-header {
+     background-color: #42c2ff;
+ }
+ /*header*/
+ /*
 .header {
     display: flex;
     width: 100%;
@@ -87,9 +143,7 @@
 }
 
 /*footer*/
-
-
-/*
+ /*
 .footer {
     display: grid;
     grid-template-columns: repeat(5,1fr);
