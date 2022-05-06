@@ -16,31 +16,42 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"> <img src="./img/Logo.png" width="200px" alt="Logo.png" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Cliente</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Productos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
+                            Categorias
+                        </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Infantil</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Ortopedia</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Higene Bucal y Corporal</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Cosmetica y Dietetica</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Natural</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="#">Ventas</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -51,11 +62,12 @@
                 </form>
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end me-4">
-                    <button type="button" class="btn btn-outline-light btn-circle btn-sm " data-bs-toggle="modal" data-bs-target="#Loginmodal">
+                    <button type="button" class="btn btn-outline-light btn-circle btn-sm" data-bs-toggle="modal" data-bs-target="#Loginmodal">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle " viewBox="0 0 16 16">
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
-          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path></svg>
-                      </button>
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
+                        </svg>
+                    </button>
                 </div>
 
                 <div class="modal fade" id="Loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -78,7 +90,7 @@
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="Login" role="tabpanel" aria-labelledby="home-tab">
                                         <form class="tab-content_login" method="POST" action="{{ route('login') }}">
-                                        @csrf
+                                            @csrf
                                             <div class="form-floating mb-3">
                                                 <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com" name="email">
                                                 <label for="floatingInput">Correo Electronico</label>
@@ -92,8 +104,8 @@
                                         </form>
                                     </div>
                                     <div class="tab-pane fade" id="Register" role="tabpanel" aria-labelledby="profile-tab">
-                                    <form class="tab-content_login" method="POST" action="{{ route('register') }}">
-                                        @csrf
+                                        <form class="tab-content_login" method="POST" action="{{ route('register') }}">
+                                            @csrf
                                             <div class="form-floating mb-3">
                                                 <input type="text" class="form-control rounded-4" id="floatingInput" placeholder="ingrese su nombre" name="name">
                                                 <label for="floatingInput">Nombre</label>
@@ -157,13 +169,13 @@
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
